@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <title>From</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="register">
+        <form id="info"  action="successful.html" >
+            <h1>Đăng ký tài khoản</h1>
+            <div class="name">
+                <input id="name"  type="text" name="name" placeholder="Họ tên" />
+                <span class="error"></span>
+            </div>
+
+
+            <div class="account">
+                <input id="account" type="text" name="account" placeholder="Tên đăng nhập" />
+                <span class="error"></span>
+            </div>
+            <div class="password">
+                <input id="password" type="password" name="password" placeholder="Mật khẩu" />
+                <span class="error"></span>
+            </div>
+            <div class="re_password">
+                 <input id="re_password" type="password" name="re_password" placeholder="Nhập lại mật khẩu" />
+                <span class="error"></span>
+            </div>
+            <div class="add">
+                <input id="add" type="text" name="add" placeholder="Địa chỉ" />
+                <span class="error"></span>
+            </div>
+            <div class="phonenumber">
+                <input id="phonenumber" type="text" name="phonenumber" placeholder="SĐT" />
+                <span class="error"></span>
+            </div>
+            <div class="radio">
+                <span>Giới tính :</span>
+                <input type="radio" name="gender" id="male" value="Nam" checked="checked"/><label for="male">Nam</label>
+                <input type="radio" name="gender" id="female" value="Nữ"/><label for="female">Nữ</label>
+            </div>
+            <div class="date_time">
+                <span>Ngày sinh :</span>
+                <select name="date" id="date">
+                    <option value="date">Ngày </option>
+                </select>
+                <select name="month" id="month">
+                    <option value="month">Tháng </option>
+                </select>
+                <select name="year" id="year">
+                    <option value="year">Năm </option>
+                </select>
+            </div>
+            <div >
+            <button type="submit" form="info" value="submit" id="submit">Đăng kí</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
